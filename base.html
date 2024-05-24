@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $page_title; ?></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFD1DC; /* Бежевый цвет фона */
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            background-color: #FFD1DC; /* Бежевый цвет фона */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu h1 {
+            margin: 0;
+        }
+
+       .menu a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #E4717A;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.menu a:hover {
+    background-color: #FF6B90; /* Изменение цвета при наведении */
+}
+
+        .container {
+            display: flex;
+            background-color: #FFD1DC; /* Бежевый цвет фона */
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .product {
+            width: 300px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: black; /* Добавляем черный цвет текста */
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #27ae60;
+        }
+
+        footer {
+            background-color:  #E4717A;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .logo img {
+            width: 3px; /* Изменяем размер логотипа */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <?php 
+    
+$page_title = "Салон красоты";
+$site_title = "Салон красоты";
+$menu_content = "<a href='glav.php'>Главная</a> | <a href='main.php' class='button'>Услуги</a> | <a href='ser.php' class='button'>Сертификат</a> | <a href='sotr.php' class='button'>Наши сотрудники</a> | <a href='register.php' class='button'>Регистрация</a> | <a href='login.php' class='button'>Вход</a> | <a href='otzyv.php' class='button'>Отзывы</a> | <a href='contacts.php' class='button'>Контакты</a>";
+?>
+
+<div class="menu">
+    <div>
+        <p>
+            <?php echo $menu_content; ?>
+        </p>
+    </div>
+</div>
+
+    <?php echo $body_content; ?>
+
+    <footer>
+        <?php echo $footer_content; ?>
+    </footer>
+</body>
+</html> 
